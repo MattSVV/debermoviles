@@ -1,0 +1,17 @@
+###
+#Get request
+GET http://localhost:3000/data HTTP/1.1
+
+###
+POST http://localhost:3000/peliculas HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "titulo": "Inception",
+  "enlace": "https://youtu.be/6AowY-cFY6Q?si=TLHsRhUz9CKi-iXX",
+  "imagen": "https://media.gq.com.mx/photos/5e582fec0c1d83000831acf6/16:9/w_1600,c_limit/final-de-inception-explicado.jpg"
+}
+
+###
+GET http://localhost:3000/peliculas/1 HTTP/1.1
